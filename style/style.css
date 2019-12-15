@@ -89,7 +89,8 @@ header {
 }
 
 .banner {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -116,7 +117,6 @@ header {
 
 .lowerclass img {
     max-width: 25px;
-    
     margin-right: 10px;
 }
 
