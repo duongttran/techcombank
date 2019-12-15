@@ -44,7 +44,7 @@ header {
 
 .logo {
     max-width: 220px;
-    height: 100%;
+    
 }
 
 .contact {
@@ -176,11 +176,15 @@ button:hover {
     border-radius: 100%;
     max-width: 80px;
     max-height: 80px;
-    margin: 0 auto;
-    position: absolute;
+    margin: 50px auto -8%;
+    /* position: absolute;
     left: 50%;
     top: 5%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0); */
+
+    display: block;
+    z-index: 1;
+    
  
 }
 
@@ -300,6 +304,7 @@ button:hover {
 
 .red-download img {
     max-width: 80px;
+    
     margin: 0 auto;
 }
 
@@ -353,19 +358,39 @@ footer {
 
 
 
+    @media (max-width: 1050px) and (min-width:801px) {
+        .testimonial-text {
+            max-width: 100%;
+        }
+        
+        .lowerclass {
+            display: block;
+            margin: 65% auto;
+        }
 
+        .red-bgr {
+            margin: 25% auto -8%;
+        }
+
+    }
 
 
     @media (max-width: 800px) and (min-width:521px) { 
         .testimonial-text {
-            position: absolute;
-            left: 10%;
-            top: 8%;
-            max-width: 400px;
+            max-width: 100%;
+        }
+        
+        .lowerclass {
+            display: block;
+            margin: 20% auto;
+        }
+
+        .red-bgr {
+            margin: 35% auto -10%;
         }
 
         .box {
-            width: 600px;
+            max-width: 520px;
         }
 
         .item {
@@ -390,10 +415,16 @@ footer {
 
         @media (max-width: 520px) and (min-width:376px) {
             .testimonial-text {
-                position: absolute;
-                left: 10%;
-                top: 8%;
-                max-width: 400px;
+                max-width: 100%;
+            }
+            
+            .lowerclass {
+                display: block;
+                margin: 20% auto;
+            }
+    
+            .red-bgr {
+                margin: 65% auto -10%;
             }
             
             .phone-call {
@@ -404,7 +435,10 @@ footer {
                 margin: 5%;
             }
 
-
+            .item {
+                max-width: 180px;
+                margin: 10px;
+            }
             .download-app {
                 flex-direction: column;
                 justify-content: center;
@@ -449,6 +483,7 @@ footer {
 
                 .lowerclass {
                     display: block;
+                    margin-top: 100px;
                 }
 
                 button {
@@ -473,23 +508,30 @@ footer {
                     display: none;
                 }
 
-               
+                .red-bgr {
+                    display: block;
+                    margin: 80% auto -16%;
+                    transform: scale(0.8);
+                }
 
                 .box {
-                    margin: 15% 5%;
+                    margin: 5% 5% 15%;
+                    padding: 8%;
                 }
 
                 .features {
                     padding: 0 5px;
                     /* justify-content: center; */
                     margin: 0 auto;
-                
                 }
+
 
                 .item {
                     width: 90px;
                     margin: 0 3px;
                 }
+
+                
 
                 .title {
                     font-size: 14px;
