@@ -88,9 +88,8 @@ header {
     display: flex;
 }
 
-.carousel-cell img {
+.banner {
     max-width: 100%;
-    height: 100%;
 }
 
 
@@ -115,7 +114,7 @@ header {
     width: 20px;
 }
 
-.testimonial-text img {
+.lowerclass img {
     max-width: 25px;
     
     margin-right: 10px;
