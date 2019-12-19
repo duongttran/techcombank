@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.css">
+
     <link
         href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
         rel="stylesheet">
@@ -49,7 +51,7 @@
     <div class="carousel" data-flickity='{ "autoPlay": true, "prevNextButtons": false }'>
 
         <div class="carousel-cell">
-            <img src="img/Banner-1.png" alt="testimonial-1" class="banner"/>
+            <img src="img/Banner-1.png" alt="testimonial-1" class="banner" />
 
             <div class="testimonial-text">
                 <div class="upperclass">
@@ -186,20 +188,27 @@
         <h1 class="center-text">Các tính năng nổi bật và hướng dẫn sử dụng</h1>
 
         <div class="features">
-            <div class="item">
-                <img src="img/247-3.png" alt="24/7" class="item-icon">
-                <p class="title uppercase center-text">chuyển khoản 24/7</p>
-                <p class="center-text">Chuyển, nhận tiền ngay</p>
-                <img src="img/play.png" alt="24/7" class="small-icon">
 
-            </div>
+            <a data-fancybox href="https://www.youtube.com/watch?v=3jrIEu5c4OU&feature=emb_logo">
+                <div class="item">
 
-            <div class="item">
-                <img src="img/ATM.png" alt="24/7" class="item-icon">
-                <p class="title uppercase center-text">Rút tiền tại Atm</p>
-                <p class="center-text">Không cần thẻ</p>
-                <img src="img/play.png" alt="24/7" class="small-icon">
-            </div>
+                    <img src="img/247-3.png" alt="24/7" class="item-icon">
+
+                    <p class="title uppercase center-text">chuyển khoản 24/7</p>
+                    <p class="center-text">Chuyển, nhận tiền ngay</p>
+                    <img src="img/play.png" alt="24/7" class="small-icon">
+
+                </div>
+            </a>
+
+            <a data-fancybox href="https://www.youtube.com/watch?v=31EOTp91X-k&feature=emb_logo">
+                <div class="item">
+                    <img src="img/ATM.png" alt="24/7" class="item-icon">
+                    <p class="title uppercase center-text">Rút tiền tại Atm</p>
+                    <p class="center-text">Không cần thẻ</p>
+                    <img src="img/play.png" alt="24/7" class="small-icon">
+                </div>
+            </a>
 
             <div class="item">
                 <img src="img/tietkiemonline.png" alt="24/7" class="item-icon">
@@ -268,7 +277,8 @@
         </div>
 
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script/jquery.fancybox.min.js"></script>
 
 </body>
 

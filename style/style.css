@@ -25,6 +25,7 @@ body {
 
 a {
     color: #EC1C24;
+    outline: 0;
 }
 
 .uppercase {
@@ -232,6 +233,10 @@ button:hover {
     margin: 0 auto;
 }
 
+.features a, .features a:visited {
+    text-decoration: none;
+}
+
 .highlight h1 {
     color: #555;
 }
@@ -241,6 +246,7 @@ button:hover {
     flex-direction: column;
     width: 250px;
     margin: 15px 15px;
+   
  
     transition: 0.5s;
     padding: 15px;

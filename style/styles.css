@@ -1,0 +1,119 @@
+@charset "utf-8"
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+/* TYPOGRAPHY */
+
+.center-text {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.red-text {
+    color: #EC1C24;
+}
+
+/* BANNER */
+
+.banner-slider {
+    position: relative;
+}
+
+
+.carousel-cell img {
+    margin-bottom: 0 ;
+}
+
+.banner-content {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+
+
+/* TOP UP */
+
+.top-up {
+    border: 1px solid green;
+    padding: 8%;
+}
+
+.red-bgr {
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    width: 80px;
+    
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.red-bgr img {
+    
+   max-width: 60px;
+   padding: 8px;
+}
+
+.box {
+    width: 80%;
+    border: red solid 1px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 5%;
+    position: relative;
+}
+
+@media (max-width: 375px) {
+    /* .top-up {
+        padding: 10% auto;
+    } */
+
+    /* BANNER */
+
+    .banner-content {
+        top: 5%;
+    }
+
+    .box {
+        margin: 10% auto;
+        padding: 10%;
+    }
+        .red-bgr {
+        width: 70px;
+        height: 70px;
+    }
+
+    .red-bgr img {
+        max-width: 50px;
+        padding: 10px;
+    }
+
+   
+}
