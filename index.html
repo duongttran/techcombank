@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" href="style/styles.css" media="screen">
+
+    <!-- SLIDER  -->
+    <link rel="stylesheet" href="style/flickity.css" media="screen">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+
+
+    <!--Video-->
+
     <link rel="stylesheet" type="text/css" href="style/jquery.fancybox.css">
 
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
-        rel="stylesheet">
-    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
-    <link rel="stylesheet" type="text/css" href="/path/to/modal-video.min.css">
-    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-
-    <title>Document</title>
+    <title>banner</title>
 </head>
 
 <body>
@@ -25,7 +28,7 @@
         <div class="contact">
 
             <div class="phone">
-                <a href="tel:1800 588 822">
+                <a href="tel:1800 588 822" class="red=text">
                     <img src="img/Phone.png" alt="phone-call">
                     <span class="phone-call">1800 588 822</span>
                 </a>
@@ -48,139 +51,79 @@
 
     </header>
 
-    <div class="carousel" data-flickity='{ "autoPlay": true, "prevNextButtons": false }'>
+    <div class="banner-slider">
 
-        <div class="carousel-cell">
-            <img src="img/Banner-1.png" alt="testimonial-1" class="banner" />
+        <div class="main-carousel"
+            data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": true, "pauseAutoPlayOnHover": false, "fade": true, "imagesLoaded": true, "prevNextButtons": false}'>
+            <div class="carousel-cell">
+                <img src="img/Banner-1.png" alt="banner-1">
+            </div>
+            <div class="carousel-cell">
+                <img src="img/Banner-2.png" alt="banner-2">
+            </div>
+            <div class="carousel-cell">
+                <img src="img/Banner-3.png" alt="banner-3">
+            </div>
+        </div>
 
-            <div class="testimonial-text">
-                <div class="upperclass">
-                    <h3 class="uppercase">E-Banking Techcombank</h3>
-                    <h2 class="red-text uppercase">Hoàn toàn miễn phí,<br>
-                        Vô vàn niềm vui</h2>
+        <div class="banner-content">
+            <div class="upperclass">
+                <p class="uppercase">E-Banking Techcombank</p>
+                <h3 class="red-text uppercase">Hoàn toàn miễn phí, <br>
+                    Vô vàn niềm vui</h3>
+            </div>
+
+            <div class="lowerclass">
+                <div class="star">
+                    <img src="img/Star.png" alt="star" />
+                    <p>Miễn phí mọi giao dịch trong và ngoài hệ thống</p>
                 </div>
 
-                <div class="lowerclass">
-                    <div class="star">
-                        <img src="img/Star.png" alt="star" />
-                        <p>Miễn phí mọi giao dịch trong và ngoài hệ thống</p>
-                    </div>
-
-                    <div class="building">
-                        <img src="img/247-1.png" alt="building" />
-                        <p>Giao dịch 24/7 mọi lúc mọi nơi</p>
-                    </div>
-
-                    <button>
-                        <span class="line-01 uppercase">Đăng ký ngay</span><br>
-                        <span class="line-02 uppercase">Nếu bạn đã có thẻ Techcombank</span>
-                    </button>
-
-                    <div class="location">
-                        <img src="img/Location.png" alt="location" />
-                        <a href="https://www.techcombank.com.vn/mang-luoi-dia-diem-atm/danh-sach-chi-nhanh-phong-giao-dich-va-atm"
-                            target="_blank">
-                            <p>Đăng ký tại chi nhánh nếu chưa có thẻ</p>
-                        </a>
-                    </div>
+                <div class="building">
+                    <img src="img/247-1.png" alt="building" />
+                    <p>Giao dịch 24/7 mọi lúc mọi nơi</p>
                 </div>
 
+                <button>
+                    <span class="line-01 uppercase">Đăng ký ngay</span><br>
+                    <span class="line-02 uppercase">Nếu bạn đã có thẻ Techcombank</span>
+                </button>
+
+                <div class="location">
+                    <img src="img/Location.png" alt="location" />
+                    <a href="https://www.techcombank.com.vn/mang-luoi-dia-diem-atm/danh-sach-chi-nhanh-phong-giao-dich-va-atm"
+                        target="_blank">
+                        <p>Đăng ký tại chi nhánh nếu chưa có thẻ</p>
+                    </a>
+                </div>
 
             </div>
 
-
         </div>
-
-        <!-- <div class="carousel-cell">
-                <img src="img/Banner-2.png" alt="testimonial-1" />
-    
-                <div class="testimonial-text">
-                    <h3 class="uppercase">E-Banking Techcombank</h3>
-                    <h2 class="red-text uppercase">Hoàn toàn miễn phí,<br>
-                        Vô vàn niềm vui</h2>
-    
-                    <div class="star">
-                        <img src="img/Star.png" alt="star" />
-                        <p>Miễn phí mọi giao dịch trong và ngoài hệ thống</p>
-                    </div>
-    
-                    <div class="building">
-                        <img src="img/247-1.png" alt="building" />
-                        <p>Giao dịch 24/7 mọi lúc mọi nơi</p>
-                    </div>
-    
-                    <button>
-                        <span class="line-01 uppercase">Đăng ký ngay</span><br>
-                        <span class="line-02 uppercase">Nếu bạn đã có thẻ Techcombank</span>
-                    </button>
-    
-                    <div class="location">
-                        <img src="img/Location.png" alt="location" />
-                        <a href="https://www.techcombank.com.vn/mang-luoi-dia-diem-atm/danh-sach-chi-nhanh-phong-giao-dich-va-atm"
-                            target="_blank">
-                            <p>Đăng ký tại chi nhánh nếu chưa có thẻ</p>
-                        </a>
-                    </div>
-    
-                </div>
-    
-    
-        </div>
-
-        <div class="carousel-cell">
-                <img src="img/Banner-3.png" alt="testimonial-1" />
-    
-                <div class="testimonial-text">
-                    <h3 class="uppercase">E-Banking Techcombank</h3>
-                    <h2 class="red-text uppercase">Hoàn toàn miễn phí,<br>
-                        Vô vàn niềm vui</h2>
-    
-                    <div class="star">
-                        <img src="img/Star.png" alt="star" />
-                        <p>Miễn phí mọi giao dịch trong và ngoài hệ thống</p>
-                    </div>
-    
-                    <div class="building">
-                        <img src="img/247-1.png" alt="building" />
-                        <p>Giao dịch 24/7 mọi lúc mọi nơi</p>
-                    </div>
-    
-                    <button>
-                        <span class="line-01 uppercase">Đăng ký ngay</span><br>
-                        <span class="line-02 uppercase">Nếu bạn đã có thẻ Techcombank</span>
-                    </button>
-    
-                    <div class="location">
-                        <img src="img/Location.png" alt="location" />
-                        <a href="https://www.techcombank.com.vn/mang-luoi-dia-diem-atm/danh-sach-chi-nhanh-phong-giao-dich-va-atm"
-                            target="_blank">
-                            <p>Đăng ký tại chi nhánh nếu chưa có thẻ</p>
-                        </a>
-                    </div>
-    
-                </div>
-    
-    
-        </div> -->
-
-
     </div>
 
-    <div class="top-up">
-        <div class="red-bgr">
-            <img src="img/top-up-ribbon.png">
-        </div>
 
+    <div class="top-up">
         <div class="box">
-            <h2 class="center-text uppercase">nhân đôi top-up với e-banking techcombank</h2>
-            <ul>
-                <li>Tặng ngay 100% giá trị tiền nạp khi đăng ký mở mới E-Banking Techcombank và sử dụng tính năng nạp
-                    tiền di động </li>
-                <li>Chương trình áp dụng từ ngày 20/10 - 31/12/2018. Thể lệ chi tiết xem <a href="" target="_blank">tại
-                        đây</a></li>
-                <li>Danh sách khách hàng nhận top-up được cập nhật hàng tuần, xem <a href="" target="_blank">tại đây</a>
-                </li>
-            </ul>
+            <div class="red-bgr">
+                <img src="img/top-up-ribbon.png" alt="red ribbon">
+            </div>
+
+            <div class="box-content">
+                <h2 class="center-text uppercase">nhân đôi top-up với e-banking techcombank</h2>
+                <ul>
+                    <li>Tặng ngay 100% giá trị tiền nạp khi đăng ký mở mới E-Banking Techcombank và sử dụng tính năng
+                        nạp
+                        tiền di động </li>
+                    <li>Chương trình áp dụng từ ngày 20/10 - 31/12/2018. Thể lệ chi tiết xem <a href=""
+                            target="_blank">tại
+                            đây</a></li>
+                    <li>Danh sách khách hàng nhận top-up được cập nhật hàng tuần, xem <a href="" target="_blank">tại
+                            đây</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 
@@ -277,6 +220,9 @@
         </div>
 
     </div>
+
+
+    <!-- VIDEO JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script/jquery.fancybox.min.js"></script>
 
