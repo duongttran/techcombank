@@ -112,6 +112,9 @@ header {
     margin-bottom: 0;
 }
 
+.carousel-cell {
+    width: 100%;
+}
 
 .carousel-cell img {
     width: 100%;
